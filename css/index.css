@@ -1,0 +1,21 @@
+.mainimg {
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+  min-height: 400px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.maintxt {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.maintxtwrap {
+  padding: 10% 0;
+}
