@@ -3,6 +3,10 @@ body {
   padding-top: 70px;
 }
 
+.nolink {
+  color: black;
+}
+
 
 /* two row nav fix
 NOTE: may have to change if header changes*/

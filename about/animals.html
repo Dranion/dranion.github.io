@@ -17,7 +17,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="css/index.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -32,26 +32,47 @@
 
   <body>
     <div id="header"></div>
+    <h1> My Animals</h1>
     <div class="row container-fluid">
-      <div class="col-lg-4 col-md-4 col-sm-4 text-center"><img class="img-responsive img-thumbnail" src="https://static.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg"></div>
-      <div class="col-lg-8 col-md-8 col-sm-8">
-        <h2>About Me </h2>
-        <p> My name is Drew Thompson. I'm currently a <a href="academics.html">junior in High School</a>. I've been coding since I was young, but recently my interests have been in <a href="personal/machine.html"> machine learning </a> and <a href="professional/web.html"> web development </a>.
-          Currently I'm looking for possible internships for the summer of 2018.
-        </p>
-        <h3> <small> Fun Facts </small></h3>
-        <p>
-          I live in the rainy state of Washington, and I hate the sun. Outside of coding, I enjoy cuddling <a href="about/animals.html">my animals</a> and <a href="about/books.html" title="my favourite books">reading books</a>. I'm learning to play the
-          ukelele, though I'm not very good yet. I consider myself 'fairly decent' at drawing, and subject the public to my illusion through my <a href="https://www.instagram.com/adoringdrawing/">art instagram</a>. I made my <a href="http://kaleythompson.com/pig/pig.html">first web app</a>          at the age of nine. My skills have improved since then (I should hope) but my favourite animal has remained the same. </p>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="two guinea pigs">
+          <div class="caption">
+            <h3>Jim and Aiden</h3>
+            <p>They're two adorable balls of fluff! Aiden is the white one, and Jim is the black one. Jim enjoys eating and cuddling, whereas Aiden enjoys exploring and hiding. </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="two guinea pigs">
+            <div class="caption">
+              <h3>Angel</h3>
+              <p>Despite her name officially being Angel, we usually just call her 'Kitty'. She used to be really mean, but has mellowed out in her old age. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="two guinea pigs">
+            <div class="caption">
+              <h3>Prim</h3>
+              <p>She's an adorable pupper i love her </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+
+
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
-      $.get('header.html')
+      $.get('/header.html')
         .done(function(data) {
           $('#header').html(data);
         });
