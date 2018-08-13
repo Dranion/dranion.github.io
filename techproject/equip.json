@@ -1,0 +1,40 @@
+{"Physical Tools":[
+      {
+         "Name":"Rite in the Rain",
+         "Type":"Simple",
+         "Url":"https://www.riteintherain.com/side-spiral-journal-yellow-4-5-8-x-7",
+         "Image":"https://d163axztg8am2h.cloudfront.net/static/img/d3/26/cb196a647d6e0e689e341bce1fe6.jpg",
+         "Price":6.95,
+         "Description":"Sometimes the simplest tools are the best. While this guide focuses primarily on technical equipment, field-safe notebooks such as the Rite in the Rain and a regular pen are sometimes all you need to study natural phenoninum.",
+         "Tags":[
+            "fieldwork",
+            "waterproof",
+            "portable"
+         ]
+      },
+      {
+         "Name":"Plugable 250x Micro USB",
+         "Type":"Microscope",
+         "Url":"https://plugable.com/products/usb2-micro-250x/",
+         "Image":"https://dxg49ziwjgkgt.cloudfront.net/images/usb2-micro-250x/main_256.jpg",
+         "Price":49.99,
+         "Description":"",
+         "Tags":[
+            "250x",
+            "stationary"
+         ]
+      },
+      {
+         "Name":"Portable LCD Digital Microscope",
+         "Type":"Microscope",
+         "Url":"https://www.celestron.com/products/portable-lcd-digital-microscope",
+         "Image":"https://cdn.shopify.com/s/files/1/1935/4371/products/44310_Portable_LCD_Digital_Microscope_1_570x380@2x.jpg?v=1529943530",
+         "Price":89.95,
+         "Description":"Product description: 'The Celestron LCD Handheld Digital Microscope is a lightweight, portable microscope with a 2.4” color TFT LCD screen. A soft carry pouch is included so you can take it along on all your outdoor adventures. With an optical zoom of 1x to 3.7x and magnification up to 54x, it’s great for viewing stamps, coins, bugs, plants, rocks, skin, gems, circuit boards, and more.'",
+         "Tags":[
+            "54x",
+            "portable"
+         ]
+      }
+   ]
+}
