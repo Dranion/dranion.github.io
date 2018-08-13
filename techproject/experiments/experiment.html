@@ -9,20 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Citizen Science: Community</title>
+    <style>
+    li img {
+      max-height:100px;
+      max-width:100%
+    }
+    .imglinks li {
+      border:1px black solid;
+      padding:1em;
+      margin:1em;
+      border-radius:20px;
+    }
+    </style>
 
       </head>
       <body>
     <div id="header"></div>
   <div class="jumbotron jumbotron-fluid header">
     <div class="container">
-      <h1 class="text-center">Choosing Equipment</h1>
+      <h1 class="text-center">Experiments</h1>
     </div>
   </div>
     <div class="container y-2">
-    <p> It's important to put a lot of thought into what equipment you want to buy. Starting your own experiments can require serious up-front investment, and it's better to start small then to waste your money. </p> 
-          <div class="card-deck y-2" id="phytool">
+  <p class="lead"> This page will contain some sample experiments. For now here's a couple pages that will help:  </p>
+  <ul class="list-unstyled imglinks text-center">
+    <li><a href="https://learning-center.homesciencetools.com/article/microscope-experiments/"><img class="mr-3" src="https://smhttp-ssl-68118.nexcesscdn.net/wp-content/uploads/2017/07/HOME_DarkLogo.png" alt="Home Science Tools"> </a></li>
+    <li><a href="https://thehomeschoolscientist.com/water-quality-experiment/"><img class="mr-3" src="https://2dh8s42c4g0b4fkujgfp4w7a-wpengine.netdna-ssl.com/wp-content/uploads/2015/05/logo1.png" alt="The Homeschool Scientist"> </a></li>
+  </ul>
 
-      </div>
     </div>
   </div>
     <div id="footer"></div>
@@ -40,19 +54,5 @@
       $("#footer").load("../footer.html");
     });
     </script>
-    <script>
-    $.getJSON( "https://api.myjson.com/bins/hs8po", {}, function( data ) {
-      console.log(data)
-      for (let tool of data["Physical Tools"]){
-        temp = '<div class="card tool y-2"><img class="card-img-top" src="' + tool.Image + '"><div class="card-body">';
-        temp += '<h5 class="card-title"> ' + tool.Name + '</h5>';
-        temp +='<p class="card-text">' + tool.Description + '</p>';
-        temp +='<a href="#" class="btn btn-primary">Use Cases</a>  <a href="' + tool.Url + '" class="btn btn-secondary">$' + tool.Price + '</a>';
-        temp +='</div></div>'
-        $(phytool).append(temp);
-      }
-    });
-
-</script>
   </body>
 </html>
