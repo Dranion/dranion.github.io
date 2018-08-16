@@ -1,0 +1,25 @@
+{"Experiments":[
+      {
+         "Name":"Making Your Own Microscope Slides: Discovering Cells ",
+         "Image":"http://www.photos-public-domain.com/wp-content/uploads/2011/02/cork-stoppers-600x400.jpg",
+         "Source":"photos-public-domain.com",
+         "Hypothesis":"What do you think a cork looks like under a microscope?",
+         "Materials":["a bottle cork", "microscope slide", "microscope cover slip", "razor blade", "water"],
+         "Steps":["Cut a thin slice of the cork. The thinner the better!", "Put a drop of water on the microscope slide, roughly larger than the size of the cork.", "Set the slice of your cork on top of the water droplet.", "Place the coverslip on top of the cork, being careful to minimize airbubbles.", "Blot any extra water away using a paper towel or similar object.", "Place the slide under your microscope and set the microscope to the lowest objective.", "Locate the cork and slowly zoom in, changing the objective as necessary until the detail is clear."],
+         "Summary":"Replicate the 1665 experiment where Robert Hooke discovered the very first plant cell ever seen under a microscope.",
+         "Learn More":"",
+         "Tags":["microscopy", "cells"]
+      },
+      {
+         "Name":"Making Your Own Microscope Slides: Cheek Cells",
+         "Image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Leukemia_cells.png/500px-Leukemia_cells.png",
+         "Source":"Wikimedia",
+         "Hypothesis":"What do you think your cheek is made of?",
+         "Materials":["a toothpick", "microscope slide", "microscope cover slip", "<a href='https://www.homesciencetools.com/product/methylene-blue-30-ml/' title='A chemical that stains the nucleus and DNA of cells blue. Click for a link to purchase.'>methylene blue</a>"],
+         "Steps":["Scape the inside of your cheek with a toothpick.", "Wipe the toothpick on your microscope slide", "Lightly drag the coverslip over wher eyou just wiped to make a very thing layer of cells.", "Wait for the smear to air dry.", "Add a drop of methylene blue to the center of your smear. This will highlight the nucleus of the cells, making them clear and distinct.", "Place a coverslip over your smear", "Place the slide under your microscope and set the microscope to the lowest objective.", "Locate your smear and slowly zoom in, changing the objective as necessary until the detail is clear."],
+         "Learn More":"",
+         "Summary":"Discover how your own cells work, along with practice with dye that's used throughout scientific labs.",
+         "Tags":["microscopy", "cells"]
+      }
+   ]
+}
