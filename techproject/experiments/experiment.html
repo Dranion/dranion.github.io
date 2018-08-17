@@ -20,6 +20,9 @@
       margin:1em;
       border-radius:20px;
     }
+    .jumbotron {
+      background-size:cover;
+    }
     </style>
 
       </head>
@@ -27,10 +30,10 @@
     <div id="header"></div>
   <div class="jumbotron jumbotron-fluid header">
     <div class="container">
-      <h1 class="text-center">Experiments</h1>
+      <h1 class="text-center" id="heading">Experiments</h1>
     </div>
   </div>
-    <div class="container y-2">
+    <div class="container y-2" id="content">
   <p class="lead"> Not sure what experiment you want to try? Here are some easy starters for beginners. Otherwise, try our search and tag features to locate experiments that interest you. </p>
   <div class="card-deck y-2" id="experiments">
 
@@ -53,15 +56,43 @@
     });
     </script>
     <script>
+    var experimentdata;
     $.getJSON( "../experiment.json", {}, function( data ) {
-      console.log(data)
-      for (let tool of data["Experiments"]){
-        temp = '<div class="card tool y-2"><div style="width:100%; max-height:200px; overflow:hidden"><img class="card-img-top" src="' + tool.Image + '" title="Public domain photo courtesty of ' + tool.Source + '"></div><div class="card-body">';
-        temp += '<h5 class="card-title"> ' + tool.Name + '</h5>';
-        temp +='<p class="card-text">' + tool.Summary + '</p>';
+      for (var key in data){
+        experimentdata = data;
+        temp = '<div class="card tool y-2" id="' + key + '"><div style="width:100%; max-height:200px; overflow:hidden"><img class="card-img-top" src="' + data[key]["Image"] + '" title="Public domain photo courtesty of ' + data[key]["Source"] + '"></div><div class="card-body">';
+        temp += '<h5 class="card-title"> ' + data[key]["Name"] + '</h5>';
+        temp +='<p class="card-text">' + data[key]["Summary"] + '</p>';
         temp +='</div></div>'
         $(experiments).append(temp);
+
       }
+    });
+
+
+    $('body').on('click', '.card', function () {
+      $('h1').html(experimentdata[this.id]["Name"]);
+      $('h1').css("color", "white");
+
+      $(".jumbotron").css("background", "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('" + experimentdata[this.id]["Image"] + "')")
+
+      $('#content').html('<h2> Hypothesis </h2><p> A hypothesis is a guess that you make before you start an experiment. It\'s part of the <a href="scientificmethod.html">scientific method</a>. For this experiment, ask yourself: </p><p class="lead">' + experimentdata[this.id]["Hypothesis"] + '</p><p> You can write down the answer to this question, or just keep your answer in your head as you do the experiment.');
+      $('#content').append('<h2> Materials </h2><ul id="materials"></ul>');
+      var temp = "";
+
+      for (var material in experimentdata[this.id]["Materials"]){
+        temp += "<li>" + experimentdata[this.id]["Materials"][material] + "</li>";
+      }
+      $('#materials').append(temp);
+
+      $('#content').append('<h2> Method </h2><ol id="steps"></ol>');
+      temp = "";
+
+      for (var step in experimentdata[this.id]["Steps"]){
+        temp += "<li>" + experimentdata[this.id]["Steps"][step] + "</li>";
+      }
+      $('#steps').append(temp);
+
     });
 
 </script>

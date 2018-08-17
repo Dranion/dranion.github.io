@@ -1,5 +1,5 @@
-{"Experiments":[
-      {
+{
+      "discovercells":{
          "Name":"Making Your Own Microscope Slides: Discovering Cells ",
          "Image":"http://www.photos-public-domain.com/wp-content/uploads/2011/02/cork-stoppers-600x400.jpg",
          "Source":"photos-public-domain.com",
@@ -10,7 +10,7 @@
          "Learn More":"",
          "Tags":["microscopy", "cells"]
       },
-      {
+      "cheekcells":{
          "Name":"Making Your Own Microscope Slides: Cheek Cells",
          "Image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Leukemia_cells.png/500px-Leukemia_cells.png",
          "Source":"Wikimedia",
@@ -21,5 +21,4 @@
          "Summary":"Discover how your own cells work, along with practice with dye that's used throughout scientific labs.",
          "Tags":["microscopy", "cells"]
       }
-   ]
 }
