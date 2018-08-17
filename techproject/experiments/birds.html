@@ -37,9 +37,9 @@
       <h1 class="text-center" style="">Experiment: Birds </h1>
     </div>
   </div>
-    <div class="container y-2">
+    <div class="container y-2" id="content">
       <p> Counting birds in your background is a great and easy way to see the <abbr title="the number of species. A general indicator of the health of the ecosystem."> biodiversity </abbr> of your surroundings. The great thing about bird-counting is that almost everything you need is non-scientific or likely already in your house. </p>
-      
+
 
 
     </div>
@@ -58,6 +58,29 @@
       $("#footer").load("../footer.html");
     });
     </script>
+    <script>
+    $.getJSON( "../experiment.json", {}, function( data ) {
+      $('#content').append('<h2> Hypothesis </h2><p> A hypothesis is a guess that you make before you start an experiment. It\'s part of the <a href="scientificmethod.html">scientific method</a>. For this experiment, ask yourself: </p><p class="lead">' + data["birds"]["Hypothesis"] + '</p><p> You can write down the answer to this question, or just keep your answer in your head as you do the experiment.');
+      $('#content').append('<h2> Materials </h2><ul id="materials"></ul>');
+      var temp = "";
+
+      for (var material in data["birds"]["Materials"]){
+        temp += "<li>" + data["birds"]["Materials"][material] + "</li>";
+      }
+      $('#materials').append(temp);
+
+      $('#content').append('<h2> Method </h2><ol id="steps"></ol>');
+      temp = "";
+
+      for (var step in data["birds"]["Steps"]){
+        temp += "<li>" + data["birds"]["Steps"][step] + "</li>";
+      }
+      $('#steps').append(temp);
+
+      $('#content').append("<h2> Analysis </h2><p> Think about what results you got, and how they compared to your initial hypothesis. What changed, or did everything go as expected? If you're recording, write down any relevant data, <abbr title='numerical data'> quantitative </abbr> or <abbr title='data that you observed, like color or features'> qualitative data. </abbr></p>");
+});
+    </script>
+
 
   </body>
 </html>

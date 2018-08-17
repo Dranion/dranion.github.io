@@ -7,7 +7,7 @@
          "Materials":["a bottle cork", "microscope slide", "microscope coverslip", "razor blade", "water"],
          "Steps":["Cut a thin slice of the cork. The thinner the better!", "Put a drop of water on the microscope slide, roughly larger than the size of the cork.", "Set the slice of your cork on top of the water droplet.", "Place the coverslip on top of the cork, being careful to minimize air bubble.", "Blot any extra water away using a paper towel or similar object.", "Place the slide under your microscope and set the microscope to the lowest objective.", "Locate the cork and slowly zoom in, changing the objective as necessary until the detail is clear."],
          "Summary":"Replicate the 1665 experiment where Robert Hooke discovered the very first plant cell ever seen under a microscope.",
-         "Learn More":"",
+         "Learn More":"Corks aren't the only things that have cells. Try looking at other objects around the house. What do you think will have visible cells? What do things without cells look like?",
          "Tags":["microscopy", "cells"]
       },
       "cheekcells":{
@@ -17,8 +17,19 @@
          "Hypothesis":"What do you think your cheek is made of?",
          "Materials":["a toothpick", "microscope slide", "microscope coverslip", "<a href='https://www.homesciencetools.com/product/methylene-blue-30-ml/' title='A chemical that stains the nucleus and DNA of cells blue. Click for a link to purchase.'>methylene blue</a>"],
          "Steps":["Scape the inside of your cheek with a toothpick.", "Wipe the toothpick on your microscope slide", "Lightly drag the coverslip over wher eyou just wiped to make a very thing layer of cells.", "Wait for the smear to air dry.", "Add a drop of methylene blue to the center of your smear. This will highlight the nucleus of the cells, making them clear and distinct.", "Place a coverslip over your smear", "Place the slide under your microscope and set the microscope to the lowest objective.", "Locate your smear and slowly zoom in, changing the objective as necessary until the detail is clear."],
-         "Learn More":"",
+         "Learn More":"With permisison, you could try doing this experiment with other people -- do their cells look different than yours? What things do you notice about the cells?",
          "Summary":"Discover how your own cells work, along with practice with dye that's used throughout scientific labs.",
          "Tags":["microscopy", "cells"]
+      },
+      "birds":{
+        "Name":"Counting Birds",
+        "Image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Leukemia_cells.png/500px-Leukemia_cells.png",
+        "Source":"Wikimedia",
+        "Hypothesis":"What kind of birds do you think come to your background? How many of them will there be?",
+        "Materials":["a pen or pencil", "a piece of paper", "[optional] a bird feeder or a bowl with bird seed"],
+        "Steps":["Do some basic research into the types of birds in your area so you know what categories to place the birds in. The more research, the more accurate your definitions. Try <a href='https://www.whatbird.com/browse/attribute/birds_na_147/38/Location/'>whatbird</a> for a quick glance at relevant bird species!","Decide how long you want to count the birds - an hour, thirty minutes, or otherwise?","To start your experiment, if you have it, set out the bird seed. This will make more birds come to your yard.", "Settle down with clear view of the seed or your yard. Mark each bird and the type of bird as they come."],
+        "Learn More":"Want to go above and beyond? Try changing up some of the factors: do different birds come with different types of seed? Do they prefer different feeders? Customize the experiment by changing individual factors. ",
+        "Summary":"A basic, no tools experiment to figure out what birds come to your yard.",
+        "Tags":["microscopy", "cells"]
       }
 }
