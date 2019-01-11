@@ -8,6 +8,21 @@ body
 {
     color: black;
 }
+.inside {
+    max-width:50%;
+    margin:0.5em;
+    padding:0px;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+.daterange { 
+    font-size:0.8em;
+    color:#444;
+} 
 .container
 {
     display: block;
