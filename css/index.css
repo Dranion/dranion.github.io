@@ -41,6 +41,17 @@ a:hover {
 
     border-left: #66ff33 solid 2px;
 }
+.card {
+  border-left:#66ff33 solid 0.04em;
+  background-color:inherit;
+}
+.btn-link {
+  color:#9ce085;
+}
+.btn-link:hover {
+  color: #b385e0;
+
+}
 .linkhead {
   width:8em;
   background-color: #091505;
